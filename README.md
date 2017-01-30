@@ -12,12 +12,17 @@ The task is to create a simple index for the provided document in `data` folder 
     - Parse the wikipedia xml sample document using a standard xml parser module in python or manually (if easier) 
     - Skip Wikipedia Categories i.e.: documents that are very short and start by `Category:`
     
-    - create 3 output files in the `output` folder 
-    - `doc.vocab` a CSV file contains unique words in the document and their counts it's columns formatted as below
-        -  `wordid`  : generaetd id of the word
-        -  `word`    : text of the word
-        -  `word_count`: number of appearances of the word in all documents 
-        -  `document_count` : number of documents that word appear in.
+    - create the following two files in the `output` folder: 
+        - `doc.vocab` a CSV file contains unique words in the document and their counts. It's columns formatted as below:
+            -  `wordid`  : generaetd id of the word
+            -  `word`    : text of the word
+            -  `word_count`: number of appearances of the word in all documents 
+            -  `document_count` : number of documents that word appear in.
+            
+        - `docs.csv` a csv files contains the words of each document replaced by an ID. It's columns are formatted as below:
+            -  `docid` :  the docid as appears in the xml input file (e.g. '38409153' for the first <doc> ).  
+            -  `doc_sequence`   : `doc.vocab` ID sequence for words in the document.
+ 
         
  - Tips and notes: 
   
